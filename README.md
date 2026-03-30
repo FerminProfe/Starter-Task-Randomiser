@@ -1,20 +1,53 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Starter Task Randomiser
 
-# Run and deploy your AI Studio app
+An AI-powered tool for teachers to generate engaging 10-minute starter activities for students (Year 7-13) based on uploaded lesson materials.
 
-This contains everything you need to run your app locally.
+## Features
+- **Year Group Selection:** Tailor tasks for students aged 11 to 18.
+- **Multi-Format Upload:** Supports PDFs, images, and text files.
+- **Custom Preferences:** Optional text box for teachers to specify activity types (e.g., "multiple choice quiz", "debate hook").
+- **AI-Powered:** Uses Google Gemini 3 Flash for intelligent content analysis and task generation.
 
-View your app in AI Studio: https://ai.studio/apps/85f50e54-f35b-48cd-9865-313c19088f16
+## Getting Started
 
-## Run Locally
+### Prerequisites
+- Node.js (v18 or higher)
+- A Google Gemini API Key (get one at [ai.google.dev](https://ai.google.dev/))
 
-**Prerequisites:**  Node.js
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <your-repo-url>
+   cd starter-task-randomiser
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the root directory and add your API key:
+   ```env
+   VITE_GEMINI_API_KEY=your_api_key_here
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
+## Deployment
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Vercel (Recommended for Free Hosting)
+1. Push your code to a GitHub repository.
+2. Connect your GitHub account to [Vercel](https://vercel.com/).
+3. Import the project.
+4. Add `VITE_GEMINI_API_KEY` as an Environment Variable in the Vercel dashboard.
+5. Deploy! You will get a professional `.vercel.app` link to share with your colleagues.
+
+### Netlify
+Similar to Vercel, connect your GitHub repo to [Netlify](https://www.netlify.com/) and add the environment variable.
+
+## Built With
+- React + Vite
+- Tailwind CSS
+- Google Gemini AI SDK
+- Lucide React (Icons)
+- Framer Motion (Animations)
