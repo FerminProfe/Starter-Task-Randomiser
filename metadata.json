@@ -1,0 +1,5 @@
+{
+  "name": "Starter Task Randomiser",
+  "description": "Generate engaging 10-minute starter tasks for students (Year 7-13) based on uploaded lesson materials.",
+  "requestFramePermissions": []
+}
